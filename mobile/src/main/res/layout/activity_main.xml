@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="cmpe220.smartalertapp.cmpe.smartalertapp.MainActivity"
+    android:keepScreenOn="true"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:maxHeight="90dp"
+        android:maxWidth="90dp"
+        android:src="@drawable/er_icon" />
+
+    <ImageView
+        android:id="@+id/smart_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="179dp"
+        android:src="@drawable/smart_alert" />
+
+    <EditText
+        android:id="@+id/email_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/smart_alert"
+        android:layout_alignEnd="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:background="@drawable/text_bottom_line"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/email_address"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_bottom_line"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:text="@string/login"
+        android:layout_below="@+id/password"
+        android:layout_alignEnd="@+id/createProfileButton"
+        android:layout_alignStart="@+id/createProfileButton"
+        android:drawableLeft="@drawable/login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW USER?"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/createProfileButton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/newUser" />
+
+    <Button
+        android:layout_marginTop="3dp"
+        android:id="@+id/createProfileButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:text="@string/createyourprofile"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/createprofile"/>
+
+
+</RelativeLayout>

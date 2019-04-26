@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:keepScreenOn="true"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="70dp"
+        android:maxHeight="70dp"
+        android:src="@drawable/er_icon"
+        android:id="@+id/imageView1"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's your email?"
+        android:textColor="#ffffff"
+        android:id="@+id/whatsYourEmail"
+        android:textSize="24dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We won't send you spam."
+        android:textColor="#ffffff"
+        android:id="@+id/noSpam"
+        android:layout_below="@+id/whatsYourEmail"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#ffba6a6f"
+        android:textStyle="bold"
+        android:id="@+id/fullName"
+        android:layout_below="@+id/noSpam"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullName"
+        android:background="@drawable/text_bottom_line"
+        android:inputType="textEmailAddress"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:text="@string/next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

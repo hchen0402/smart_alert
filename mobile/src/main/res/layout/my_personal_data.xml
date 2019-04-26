@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Data"
+            android:textColor="#ffffff"
+            android:id="@+id/personalData"
+            android:textSize="24dp"
+            android:layout_marginBottom="20dp"
+            android:layout_margin="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#ffffff"
+                android:id="@+id/name"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/nameInput"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Birthday"
+                android:textColor="#ffffff"
+                android:id="@+id/birthday"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/birthdayInput"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:inputType="number"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:textColor="#ffffff"
+                android:id="@+id/height"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:id="@+id/heighInput"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textColor="#ffffff"
+                android:id="@+id/weight"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:textColor="#ffffff"
+                android:ems="10"
+                android:id="@+id/weightInput"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Blood Type"
+                android:textColor="#ffffff"
+                android:id="@+id/bloodType"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:id="@+id/bloodTypeInput" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Medical ID"
+                android:textColor="#ffffff"
+                android:id="@+id/medicalID"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/medicalIDInput"
+                android:inputType="text"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Health Care Provider"
+                android:textColor="#ffffff"
+                android:id="@+id/healthcare"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:id="@+id/healthcareInput"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Driver's License"
+                android:textColor="#ffffff"
+                android:id="@+id/driversLicense"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/driversLicenseInput"
+                android:inputType="text"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:text="@string/save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp" />
+
+
+</RelativeLayout>

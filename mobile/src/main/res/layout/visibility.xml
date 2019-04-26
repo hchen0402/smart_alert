@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:keepScreenOn="true"
+    >
+    
+    <CheckBox
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/Birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/Height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/Weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/BloodType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BloodType"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/MedicalID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical ID"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/HealthCareProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health Care Provider"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/DriversLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver's License"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="OK"
+        android:textColor="#ffffff"
+        android:id="@+id/okButton"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

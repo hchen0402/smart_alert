@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WearMainActivity"
+    android:id="@+id/click_screen"
+    android:clickable="true"
+    android:keepScreenOn="true"
+    tools:deviceIds="wear_round"
+    android:background="@drawable/bg">
+
+    <TextView android:id="@+id/needHelp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="DO YOU \nNEED HELP?"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView android:id="@+id/tap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap screen for"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignTop="@+id/text"
+        android:layout_alignParentStart="true" />
+
+    <TextView android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#ff4b9215"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/needHelp"
+        android:layout_toEndOf="@+id/tap"
+        android:layout_marginLeft="5dp" />
+
+    <TextView android:id="@+id/hold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press &amp; hold for"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/tap"
+        android:layout_alignStart="@+id/tap" />
+
+    <TextView android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO"
+        android:textSize="20dp"
+        android:textColor="#ffc82b1b"
+        android:layout_below="@+id/text"
+        android:layout_toEndOf="@+id/hold"
+        android:layout_marginLeft="5dp" />
+
+
+
+</RelativeLayout>

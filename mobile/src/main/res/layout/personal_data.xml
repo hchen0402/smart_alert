@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#ffffff"
+                android:id="@+id/name"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/nameInput"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:background="@drawable/text_bottom_line"
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Birthday"
+                android:textColor="#ffffff"
+                android:id="@+id/birthday"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/monthInput"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:inputType="number"
+                android:background="@drawable/text_bottom_line"
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="16dp"/>
+            <EditText
+                android:id="@+id/dayInput"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:inputType="number"
+                android:background="@drawable/text_bottom_line"
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="16dp"/>
+            <EditText
+                android:id="@+id/yearInput"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:inputType="number"
+                android:background="@drawable/text_bottom_line"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:textColor="#ffffff"
+                android:id="@+id/height"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:id="@+id/ft_input"
+                android:background="@drawable/text_bottom_line"
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="ft"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16dp"/>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:textColor="#ffffff"
+                android:ems="10"
+                android:id="@+id/in_input"
+                android:background="@drawable/text_bottom_line"
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="in"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textColor="#ffffff"
+                android:id="@+id/weight"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:layout_width="63dp"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:textColor="#ffffff"
+                android:ems="10"
+                android:id="@+id/weightInput"
+                android:background="@drawable/text_bottom_line"
+                android:textSize="16dp"/>
+
+            <Spinner
+                android:layout_width="64dp"
+                android:layout_height="40dp"
+                android:spinnerMode="dropdown"
+                android:id="@+id/weightSpinner"
+                android:layout_weight="0.34" >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Blood Type"
+                android:textColor="#ffffff"
+                android:id="@+id/bloodType"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp"/>
+
+            <Spinner
+                android:layout_width="64dp"
+                android:layout_height="40dp"
+                android:spinnerMode="dropdown"
+                android:id="@+id/bloodTypeSpinner"
+                android:layout_weight="0.15" >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Medical ID"
+                android:textColor="#ffffff"
+                android:id="@+id/medicalID"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/medicalIDInput"
+                android:inputType="text"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/text_bottom_line"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Health Care Provider"
+                android:textColor="#ffffff"
+                android:id="@+id/healthcare"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp"
+                />
+
+            <EditText
+                android:id="@+id/healthcareInput"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/text_bottom_line"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Driver's License"
+                android:textColor="#ffffff"
+                android:id="@+id/driversLicense"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/driversLicenseInput"
+                android:inputType="text"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/text_bottom_line"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/visibilityButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/mybutton"
+            android:layout_gravity="center"
+            android:text="@string/visibility"
+            android:drawableLeft="@drawable/visibility"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:text="@string/save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp" />
+
+    <!--<android.support.v4.widget.DrawerLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/drawer_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--&lt;!&ndash; The main content view &ndash;&gt;-->
+    <!--<FrameLayout-->
+    <!--android:id="@+id/content_frame"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <!--&lt;!&ndash; The navigation drawer &ndash;&gt;-->
+    <!--<ListView android:id="@+id/left_drawer"-->
+    <!--android:layout_width="240dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="start"-->
+    <!--android:choiceMode="singleChoice"-->
+    <!--android:divider="@android:color/transparent"-->
+    <!--android:dividerHeight="0dp"-->
+    <!--android:background="#ffffffff"/>-->
+    <!--</android.support.v4.widget.DrawerLayout>-->
+
+
+</RelativeLayout>

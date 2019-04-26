@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@drawable/bg">
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Medical Info"
+        android:textColor="#ffffff"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/mybutton"
+        android:id="@+id/medicalInfoButton" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Allergies"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/mybutton"
+        android:id="@+id/allergiesButton" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Emergency Contacts"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:id="@+id/emergencyContactsButton" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Incident Type"
+        android:textColor="#ffffff"
+        android:id="@+id/incidentType"
+        android:padding="5dp"
+        android:gravity="center_vertical|right"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/accident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Traffic Accident"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/utility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Utility"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fire"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/disorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disorder"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/robbery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Robbery"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/theft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Theft"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/power_failure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Power Failure"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Injuries       "
+        android:textColor="#ffffff"
+        android:id="@+id/injuries"
+        android:padding="5dp"
+        android:gravity="center_vertical|right"
+        android:textSize="25dp" />
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/injuries_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numbers:"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:id="@+id/injuries_number"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" Type in numbers"
+            android:inputType="textPersonName"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Location    "
+        android:textColor="#ffffff"
+        android:id="@+id/location"
+        android:padding="5dp"
+        android:gravity="center_vertical|right"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/current_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Location"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/custom_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Location:"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:id="@+id/custom_location_text"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" Type in address"
+            android:inputType="textPersonName"/>
+    </LinearLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        >
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="#ffffff"
+            android:text="@string/send"
+            android:id="@+id/continueButton"
+            android:background="@drawable/mybutton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</LinearLayout>

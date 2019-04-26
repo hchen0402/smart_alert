@@ -1,0 +1,52 @@
+<resources>
+<string name="app_name">SmartAlert</string>
+
+<string name="hello_world">Hello world!</string>
+<string name="action_settings">Settings</string>
+<string-array name="languages_array">
+    <item>English</item>
+    <item>中文</item>
+    <item>Français</item>
+    <item>日本語</item>
+    <item>Español</item>
+</string-array>
+<string-array name="weight_items">
+    <item>lbs</item>
+    <item>kg</item>
+</string-array>
+<string-array name="blood_type">
+    <item>--</item>
+    <item>O+</item>
+    <item>O</item>
+    <item>O-</item>
+    <item>A+</item>
+    <item>A-</item>
+    <item>B+</item>
+    <item>B-</item>
+    <item>AB+</item>
+    <item>AB-</item>
+</string-array>
+    <string name = "scan">Scan Barcode</string>
+    <string name = "from">Please Select the menu language</string>
+    <string name="title_activity_smart_app">SmartAlertActivity</string>
+    <string name="title_activity_contact_list">ContactListActivity</string>
+    <string name="title_activity_contact_edit">ContactEditActivity</string>
+    <string name="app_name2">SmartAlertFeature</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="send">Send</string>
+    <string name="login">Log In</string>
+    <string name="createyourprofile">Create Your Profile</string>
+    <string name="translatemenu">Translate Menu</string>
+    <string name="scanmenu">Scan Menu</string>
+    <string name="next">Next</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="edit_health_prof">Edit Health Profile</string>
+    <string name="sos">SOS</string>
+    <string name="logout">Log Out</string>
+    <string name="visibility">Set Public Visibility</string>
+    <string name="letsgo">Let\'s go!</string>
+    <string name="title_activity_call_contacts">CallContactsActivity</string>
+    <string name="report">Report</string>
+
+</resources>

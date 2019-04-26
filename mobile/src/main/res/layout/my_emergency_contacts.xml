@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/myEmergencyContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contacts"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/contact1">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#ffffff"
+                android:id="@+id/name"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/nameInput"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Relationship"
+                android:textColor="#ffffff"
+                android:id="@+id/relationship"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/relationshipInput"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textColor="#ffffff"
+                android:id="@+id/phone"
+                android:padding="5dp"
+                android:gravity="center_vertical|right"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/phoneInput"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

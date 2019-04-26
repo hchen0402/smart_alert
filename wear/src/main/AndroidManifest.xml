@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cmpe220.smartalertapp" >
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@drawable/er_launcher_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".WatchActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".ShakeMonitorService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name=".PulseMonitorService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".WatchActivityNew"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AllergyActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".EmergencyActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MessageActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ViewMedicalActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".EmergencyContactActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".EmergencyOptionsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".EmergencyCheckActivity"
+            android:label="@string/title_activity_emergency_check" >
+        </activity>
+        <activity
+            android:name=".LoadActivity"
+            android:label="@string/title_activity_load" >
+        </activity>
+        <activity
+            android:name=".EmergencyDisplayActivity"
+            android:label="@string/title_activity_emergency_display" >
+        </activity>
+
+        <service
+            android:name=".DataLayerService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ViewProfileActivity"
+            android:label="@string/title_activity_view_profile" >
+        </activity>
+        <activity
+            android:name=".NoEggActivity"
+            android:label="@string/title_activity_no_egg" >
+        </activity>
+        <activity
+            android:name=".NoFishActivity"
+            android:label="@string/title_activity_no_fish" >
+        </activity>
+        <activity
+            android:name=".NoMilkActivity"
+            android:label="@string/title_activity_no_milk" >
+        </activity>
+        <activity
+            android:name=".NoPeanutActivity"
+            android:label="@string/title_activity_no_peanut" >
+        </activity>
+        <activity
+            android:name=".NoShellfishActivity"
+            android:label="@string/title_activity_no_shellfish" >
+        </activity>
+        <activity
+            android:name=".NoSoyActivity"
+            android:label="@string/title_activity_no_soy" >
+        </activity>
+        <activity
+            android:name=".NoTreenutActivity"
+            android:label="@string/title_activity_no_treenut" >
+        </activity>
+        <activity
+            android:name=".NoGlutenActivity"
+            android:label="@string/title_activity_no_gluten" >
+        </activity>
+    </application>
+
+</manifest>

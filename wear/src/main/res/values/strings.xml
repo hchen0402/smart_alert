@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">EmergencyResponseFeature</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="title_activity_emergency_check">EmergencyCheckActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_load">LoadActivity</string>
+    <string name="title_activity_emergency_display">EmergencyDisplayActivity</string>
+    <string name="change">change this</string>
+    <string name="title_activity_view_profile">ViewProfileActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_no_egg">NoEggActivity</string>
+    <string name="title_activity_no_fish">NoFishActivity</string>
+    <string name="title_activity_no_milk">NoMilkActivity</string>
+    <string name="title_activity_no_peanut">NoPeanutActivity</string>
+    <string name="title_activity_no_shellfish">NoShellfishActivity</string>
+    <string name="title_activity_no_soy">NoSoyActivity</string>
+    <string name="title_activity_no_treenut">NoTreenutActivity</string>
+    <string name="title_activity_no_gluten">NoGlutenActivity</string>
+</resources>

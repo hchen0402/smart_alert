@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:keepScreenOn="true"
+    android:weightSum="1">
+
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:text="Personal Data"
+        android:textAllCaps="false"
+        android:id="@+id/personalDataButton"
+        android:layout_above="@+id/allergyButton"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/personal_data"/>
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:text="Allergies"
+        android:textAllCaps="false"
+        android:id="@+id/allergyButton"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/emergencyContactsButton"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/allergies_icon"/>
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:text="Emergency Contacts"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:textAllCaps="false"
+        android:id="@+id/emergencyContactsButton"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/emergency_contact"/>
+
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:id="@+id/preferenceButton"
+        android:text="Preferences"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="55dp"
+        android:drawableLeft="@drawable/preferences"/>
+
+
+</LinearLayout>

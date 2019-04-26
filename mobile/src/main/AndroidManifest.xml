@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cmpe220.smartalertapp" >
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@drawable/er_launcher_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cmpe.smartalertapp.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="cmpe.smartalertapp.EmergencyListenerService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="cmpe.smartalertapp.EmergencyResponseActivity"
+            android:label="@string/title_activity_smart_app"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.LoginPage"
+            android:label="@string/title_activity_smart_app"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="cmpe.smartalertapp.AlarmService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="cmpe.smartalertapp.ContactListActivity"
+            android:label="@string/title_activity_contact_list"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.ReportActivity"
+            android:label="Incident Report"
+            android:theme="@style/MyTheme" >
+        </activity>
+
+        <activity
+            android:name="cmpe.smartalertapp.ContactEditActivity"
+            android:label="@string/title_activity_contact_edit"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.HomeScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.ProfileOption"
+            android:label="Edit Health Profile"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.PersonalDataActivity"
+            android:label="Personal Data"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.AllergyActivity"
+            android:label="Allergies"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.EmergencyContactsActivity"
+            android:label="Emergency Contacts"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.PreferenceActivity"
+            android:label="Preferences"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.ScanActivity"
+            android:label="Allergens Detector"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.ScanResultActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.NameActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.Password"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.EmailActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.ProceedToProfile"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.ContactInfo"
+            android:label="Add Contact"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.OcrActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.TranslateActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.VisibilityActivity"
+            android:label="Set Visibility on Watch"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="cmpe.smartalertapp.CallContactsActivity"
+            android:label="Call Contacts"
+            android:theme="@style/MyTheme">
+        </activity>
+    </application>
+
+</manifest>

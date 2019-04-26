@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@drawable/bg" >
+
+    <CheckBox
+        android:id="@+id/cowsmilk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cow's Milk"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/eggs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eggs"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/peanuts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peanuts"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/fish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fish"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/shellfish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shellfish"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/treenuts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tree Nuts"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/wheat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wheat"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/soy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soy"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:id="@+id/otherText"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Type in allergy"
+            android:inputType="textPersonName"/>
+
+
+    </LinearLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        >
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="#ffffff"
+            android:text="@string/save"
+            android:id="@+id/continueButton"
+            android:background="@drawable/mybutton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</LinearLayout>

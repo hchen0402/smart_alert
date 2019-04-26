@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@drawable/bg" >
+
+    <CheckBox
+        android:id="@+id/pulseMonitor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable Pulse Monitor"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Shake Monitor"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="In an emergency..."
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp" />
+
+    <CheckBox
+        android:id="@+id/alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allow alarm to sound"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/authorities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call authorities"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/emergencyContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text emergency contacts"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="315dp"
+        android:layout_height="109dp"
+        android:hint="Enter in text message."
+        android:textColor="#ffffff"
+        android:id="@+id/enterTextMessage"
+        android:gravity="start"
+        android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp" >
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="#ffffff"
+            android:text="@string/save"
+            android:id="@+id/saveButton"
+            android:background="@drawable/mybutton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</LinearLayout>

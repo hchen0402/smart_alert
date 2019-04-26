@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="false"
+    android:keepScreenOn="true"
+    android:id="@+id/scroll">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image"
+            android:src="@drawable/menu"
+            android:layout_gravity="left|center_vertical"/>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/table">
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please Select the menu language"
+                    android:textColor="#ffffff"
+                    android:id="@+id/textView3"
+                    android:textSize="20dp"
+                    android:layout_alignParentStart="true" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="20dp">
+
+                <RelativeLayout>
+                    <Spinner
+                        android:id="@+id/translate_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true" />
+
+                    <Button android:id="@+id/btnChoose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/mybutton"
+                        android:text="@string/translatemenu"
+                        android:layout_gravity="right"
+                        android:textSize="15dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:textColor="#ffffff"
+                android:paddingStart="25dp">
+                <TextView
+                    android:id="@+id/translate_result"
+                    android:textSize="17dp"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    android:layout_centerHorizontal="false" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
