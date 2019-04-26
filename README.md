@@ -1,1 +1,1 @@
-# Emergency Response Android Application
+# Smart Alert Application
