@@ -156,6 +156,12 @@
             android:label="Call Contacts"
             android:theme="@style/MyTheme">
         </activity>
+
+        <activity
+            android:name="cmpe.smartalertapp.MainActivityChatBot"
+            android:label="ChatBot"
+            android:theme="@style/MyTheme">
+        </activity>
     </application>
 
 </manifest>

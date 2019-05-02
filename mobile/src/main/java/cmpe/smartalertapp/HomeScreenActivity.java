@@ -43,6 +43,8 @@ public class HomeScreenActivity extends Activity {
         final Intent emergencyResponseIntent = new Intent(this, EmergencyResponseActivity.class);
         final Button reportButton = (Button) findViewById(R.id.report);
         final Intent reportIntent = new Intent(this, ReportActivity.class);
+        final Button chatBotButton = (Button) findViewById(R.id.chartbot);
+        final Intent chatBotIntent = new Intent(this, MainActivityChatBot.class);
         final Button logoutButton = (Button) findViewById(R.id.logout);
         final Intent logoutIntent = new Intent(this, LoginPage.class);
 
@@ -66,6 +68,12 @@ public class HomeScreenActivity extends Activity {
             public void onClick(View v) {
                 Log.d("d", "Enter Incident report");
                 startActivity(reportIntent);
+            }
+        });
+
+        chatBotButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(chatBotIntent);
             }
         });
 

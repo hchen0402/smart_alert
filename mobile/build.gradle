@@ -23,4 +23,14 @@ dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
     wearApp project(':wear')
     compile 'com.google.android.gms:play-services:+'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:design:27.1.1'
+    //CircleImageView
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+//    Retrofit
+    //    retrofit
+    compile 'com.squareup.okhttp3:okhttp:3.1.2'
+    compile 'com.squareup.retrofit2:retrofit:2.0.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.1'
 }
